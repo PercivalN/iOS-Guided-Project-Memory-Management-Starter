@@ -13,7 +13,7 @@
 @interface Person : NSObject
 
 // TODO: Establish ownership for the car
-@property (nonatomic) Car *car;
+@property (nonatomic, retain) Car *car; // Increment retain count on set
 
 - (instancetype)initWithCar:(Car *)car;
 
